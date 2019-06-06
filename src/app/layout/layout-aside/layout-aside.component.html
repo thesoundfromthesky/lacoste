@@ -1,0 +1,16 @@
+<div class="insert bgc max-w ml">
+  <div class="items ft">
+    <div
+      class="con px py"
+      [ngClass]="'con-' + (i + 1)"
+      *ngFor="let item of items; let i = index; trackBy: trackByFn"
+    >
+      <p class="item">
+        {{ item.title }}
+      </p>
+      <figure>
+        <img [src]="item.img" alt="img" />
+      </figure>
+    </div>
+  </div>
+</div>

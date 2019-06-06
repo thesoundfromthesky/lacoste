@@ -1,0 +1,16 @@
+:host {
+  font-family: Arial, sans-serif;
+  --fs: 10;
+  --fw: 700;
+  --fc: #fff;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  width: 100%;
+
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, left 0.2s ease-in-out;
+}

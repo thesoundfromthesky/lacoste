@@ -1,0 +1,26 @@
+:host {
+  font-family: "Play", sans-serif;
+  --fs: 18;
+  --fw: 700;
+  --fc: #222;
+
+  label {
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+    display: block;
+    --min-h: 40;
+    width: 11em;
+    --px: 30;
+    --py: 10;
+    text-align: end;
+    cursor: pointer;
+    > span {
+      font-style: italic;
+      display: inline-block;
+      transform: skewX(var(--skew));
+    }
+    > input {
+      display: none;
+    }
+  }
+}

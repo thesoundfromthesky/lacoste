@@ -1,0 +1,26 @@
+:host {
+  cursor: pointer;
+  --bgc: var(--accent);
+
+  --px: 30;
+  --py: 10;
+
+  --mb: 3;
+
+  --brbw: 2;
+  --brbc: var(--primary);
+
+  width: 15em;
+  --min-h: 20;
+
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    --bgc: var(--primary);
+  }
+
+  > span {
+    display: inline-block;
+    transform: skewX(var(--skew));
+  }
+}

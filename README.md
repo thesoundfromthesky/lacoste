@@ -1,3 +1,8 @@
+# Credit
+Web design found from http://shinhyeji.com/dynamic/dy1/index.html
+
+
+
 # LacostePracticeV1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.

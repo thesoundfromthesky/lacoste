@@ -1,0 +1,25 @@
+<figure class="logo max-w ml mt">
+  <img
+    src="./assets/img/logo.png"
+    alt="brand logo"
+    width="200"
+    height="96"
+    draggable="false"
+  />
+</figure>
+<nav class="nav">
+  <app-dropdown
+    *ngFor="let dropdown of dropdowns; let i = index; trackBy: trackByFn"
+  >
+    <dropdown-toggle
+      [ngClass]="'menu-' + (i + 1)"
+      [label]="dropdown.toggle"
+    ></dropdown-toggle>
+    <dropdown-list>
+      <dropdown-item
+        *ngFor="let item of dropdown.list; trackBy: trackByFn"
+        [item]="item"
+      ></dropdown-item>
+    </dropdown-list>
+  </app-dropdown>
+</nav>

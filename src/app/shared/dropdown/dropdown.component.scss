@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  position: relative;
+
+  user-select: none;
+
+  &:hover ::ng-deep {
+    > dropdown-toggle {
+      --fc: #fff;
+
+      > label {
+        background-color: var(--primary);
+
+        > span::before {
+          content: "\f021";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          left: -1.5em;
+          animation: fa-spin 2s infinite linear;
+        }
+      }
+    }
+
+    > dropdown-list {
+      opacity: 0.8;
+      left: 95%;
+
+      animation: pe 0s linear 0.2s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes pe {
+  100% {
+    pointer-events: auto;
+  }
+}

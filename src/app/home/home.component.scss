@@ -1,0 +1,57 @@
+:host {
+  position: relative;
+}
+
+.sns {
+  z-index: 1;
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+
+  display: flex;
+  justify-content: space-between;
+  width: 15vw;
+
+  color: #fff;
+  li {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+}
+
+.txtbox {
+  font-family: Play;
+  position: absolute;
+  right: 2vw;
+  top: 10vw;
+  text-align: end;
+}
+
+.title {
+  font-style: italic;
+  --fs: 50;
+  --fc: #fff;
+  letter-spacing: -1px;
+  > span {
+    font-style: normal;
+    font-family: Monoton;
+    --fs: 110;
+    --fc: var(--primary);
+  }
+}
+
+.txt {
+  --fs: 34;
+  --fw: 400;
+  --fc: #6d1609;
+}
+
+video {
+  width: 100%;
+  vertical-align: bottom;
+}
